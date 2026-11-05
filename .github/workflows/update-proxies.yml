@@ -1,0 +1,29 @@
+name: Update proxy lists
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync verified proxies from MTPproxyLIST
+        run: |
+          curl -s -o proxies.txt "https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/verified/proxy_all_verified.txt"
+          # убираем пустые строки в конце
+          sed -i -e ':a' -e '/^[[:space:]]*$/{$d;N;ba' -e '}' proxies.txt
+
+      - name: Commit if changed
+        run: |
+          git config user.name "proxy-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add proxies.txt
+          git diff --cached --quiet || git commit -m "update proxies $(date -u +%Y-%m-%d_%H:%M)"
+          git push
