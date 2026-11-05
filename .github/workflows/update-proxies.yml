@@ -2,7 +2,7 @@ name: Update proxy lists
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 6 * * *'   # раз в сутки
   workflow_dispatch:
 
 permissions:
@@ -14,16 +14,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Sync verified proxies from MTPproxyLIST
+      - name: Sync MTProto proxies from MTPproxyLIST
         run: |
           curl -s -o proxies.txt "https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/verified/proxy_all_verified.txt"
-          # убираем пустые строки в конце
-          sed -i -e ':a' -e '/^[[:space:]]*$/{$d;N;ba' -e '}' proxies.txt
+
+      - name: Collect Web MTProto proxies from public sources
+        run: |
+          mkdir -p tmp
+          curl -s --max-time 30 -o tmp/telegavpn.txt "https://raw.githubusercontent.com/TelegaVPN/free-vpn-keys/main/sub/v2raytun/all.txt" || true
+          curl -s --max-time 30 -o tmp/alireza.txt "https://raw.githubusercontent.com/alireza786786/TELEGRAM-_PROXY/main/proxy_hub/sent_proxies.txt" || true
+          curl -s --max-time 30 -o tmp/giver.txt "https://raw.githubusercontent.com/mreliseyyt/proxy-giver/main/proxies.txt" || true
+          {
+            echo "# Web MTProto proxies (tg://webproxy) — автообновление раз в сутки"
+            echo "# Подключить свежий сервер одним нажатием: https://t.me/webproxy_tgrobot"
+            cat tmp/*.txt 2>/dev/null \
+              | grep -oE 'tg://webproxy\?server=[^[:space:]#]+' \
+              | sort -u
+          } > web-proxies.txt
 
       - name: Commit if changed
         run: |
           git config user.name "proxy-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add proxies.txt
-          git diff --cached --quiet || git commit -m "update proxies $(date -u +%Y-%m-%d_%H:%M)"
+          git add proxies.txt web-proxies.txt
+          git diff --cached --quiet || git commit -m "update lists $(date -u +%Y-%m-%d)"
           git push
