@@ -1,0 +1,7 @@
+# Web MTProto proxies (tg://webproxy) — автообновление через cron сайта
+# Свежий сервер одним нажатием: https://t.me/webproxy_tgrobot
+tg://webproxy?server=tgchat.run&port=443&secret=dd5add7f440f0c60fc46e8b5e8ac69b737
+tg://webproxy?server=mt.vpstg.run&port=443&secret=ee29d17ce708decef69ef83045bfbcaf7c636c6f7564666c6172652e636f6d
+tg://webproxy?server=mt.hotak.ru&port=443&secret=eec0906bb292cf203085dad95552d5e1d7636c6f7564666c6172652e636f6d
+tg://webproxy?server=mt.hubtool.ru&port=443&secret=ee664d66b3ed51fa19b1069ebea5b4b48d636c6f7564666c6172652e636f6d
+tg://webproxy?server=mt.mtproto.lol&port=443&secret=ee125f4cac5c83852c105623b34e75ccf2636c6f7564666c6172652e636f6d
