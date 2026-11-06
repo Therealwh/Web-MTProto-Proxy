@@ -1,9 +1,8 @@
 # Web MTProto proxies (tg://webproxy) — автообновление раз в сутки
 # Подключить свежий сервер одним нажатием: https://t.me/webproxy_tgrobot
 tg://webproxy?server=41play.live&secret=b3bb7260db405b8ba98bcbc11d6daaf5
-tg://webproxy?server=azir.moonvira.com&secret=db28729a2a2b81d558d2deb53e00233e
-tg://webproxy?server=b.proxy.rutubevideo.com&secret=dd7343d1c53018a7d4640d93b3c3d85bb2
-tg://webproxy?server=ettesal.cfd&secret=dd154cd343ba696fadf65efd17088a479e
+tg://webproxy?server=cdn.sovantrix.com&secret=dd8a9271752328a8d7fb18364c1e91ab20
+tg://webproxy?server=clicktg.click-net.one&secret=ddc7cd8aca0523870fd2b926f1ee06b91a
 tg://webproxy?server=free.vnespiska.win&secret=9fc8d7d1aeee614bd5fa3b760da44dd3
 tg://webproxy?server=freedom-way.sbs&secret=ddaa5f98427e4aa20de5dac5ae855790c7
 tg://webproxy?server=go.ultraproxy.shop&secret=dd7781b85253bbbf6c34447d0201c30b60
@@ -11,7 +10,7 @@ tg://webproxy?server=impire.notdev.space&secret=dd8ccfa20bd37ef319848de031c7fa4b
 tg://webproxy?server=impking.notdev.space&secret=ddd01c4ffac64eb851250dbbc92ae2bc3c
 tg://webproxy?server=l8mnc.flowstreamhub.site&secret=dd36f24418e62bcb8de3639c1c0051c357
 tg://webproxy?server=mtproto.win&secret=dde5544cb710bae52b8bcbc05375921c16
-tg://webproxy?server=nov.webvirt.cloud&secret=dd2cb152167b45c9a010c8109fef2d8fd6
+tg://webproxy?server=pr.zainetpro.online&secret=37a12317dfb93a51773d0302a1e5e383
 tg://webproxy?server=quietlinen.top&secret=ddaf79f88a2c8bfcb73bf8ddde9d68c37f
 tg://webproxy?server=web-de3.tgproxy.pink&secret=dde838e5f0a4a9af3ca6cb0c28903a9e80
 tg://webproxy?server=web-fi2.tgproxy.pink&secret=dd3ec02d241ca6a779687f5ecac4b6b1ce
