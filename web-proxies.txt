@@ -2,19 +2,15 @@
 # Подключить свежий сервер одним нажатием: https://t.me/webproxy_tgrobot
 tg://webproxy?server=1mt2q.proxyux.site&secret=dd506c1f04d904416c7dc0c81ce43715f2
 tg://webproxy?server=3pviq.proxydazhenaparkovke.site&secret=ddc6a4f331113ff4082a87cb48b2534506
-tg://webproxy?server=clicktg.click-net.one&secret=ddc7cd8aca0523870fd2b926f1ee06b91a
-tg://webproxy?server=free.vnespiska.win&secret=9fc8d7d1aeee614bd5fa3b760da44dd3
 tg://webproxy?server=freedom-way.sbs&secret=ddaa5f98427e4aa20de5dac5ae855790c7
 tg://webproxy?server=go.ultraproxy.shop&secret=dd7781b85253bbbf6c34447d0201c30b60
 tg://webproxy?server=goi00.proxyz.site&secret=dd669b7a9093d221633e4e222dbc11f07c
 tg://webproxy?server=love.piglio.online%2Fc1c7b0001f2c&secret=cN2PuqCgEkEBoC3eCDzTYT4J
-tg://webproxy?server=mtproto.win&secret=dde5544cb710bae52b8bcbc05375921c16
-tg://webproxy?server=pr.zainetpro.online&secret=37a12317dfb93a51773d0302a1e5e383
 tg://webproxy?server=quietlinen.top&secret=ddaf79f88a2c8bfcb73bf8ddde9d68c37f
-tg://webproxy?server=tele-connect.app&secret=dd1c82c514fdeb0d26cf8658d823220084
 tg://webproxy?server=web-de3.tgproxy.pink&secret=dde838e5f0a4a9af3ca6cb0c28903a9e80
 tg://webproxy?server=web-fi2.tgproxy.pink&secret=dd3ec02d241ca6a779687f5ecac4b6b1ce
 tg://webproxy?server=web-nl2.tgproxy.pink&secret=ddd192eec08a46d8a77c3abcad78dc3985
 tg://webproxy?server=web.gqsp.eu.org&secret=42321843839901889701749610949474
 tg://webproxy?server=web.topproxt.asia&secret=dd082242bf1744c8cc7d92b703b2746481
 tg://webproxy?server=web.vpsfix.lol&secret=dd17a5ecf0f8a0cdbb8a86606bd0602969
+tg://webproxy?server=zr4z8.proxystepa.site&secret=dd079ff466a1b5c7c4d3d7d9b7c4ea662d
